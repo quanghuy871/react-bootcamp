@@ -1,0 +1,62 @@
+/*************************************************/
+/* SCREEN BREAKPOINTS */
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1700px,
+);
+
+/*************************************************/
+/* FONTS */
+$font-sans-serif: 'Cartograph CF', sans-serif;
+$font-sans-serif-xx: 'Cartograph CF', sans-serif;
+$font-size-root: 16px;
+
+/*************************************************/
+/* COLORS */
+$c-white-1: #f9f9f9;
+$red: #e72f01;
+$gray: #F5F5F5;
+$gray-dark: #999493;
+$black: #342A25;
+
+$colors: (
+        'white-1': $c-white-1,
+        'red' : $red,
+        'gray': $gray,
+        'gray-dark': $gray-dark,
+        'black': $black,
+);
+
+
+@each $name, $color in $colors {
+  .c-#{$name} {
+    color: #{$color};
+  }
+
+  .bg-#{$name} {
+    background-color: #{$color};
+  }
+}
+
+/*************************************************/
+/* IMAGES */
+$images: './public';
+$fonts: '../fonts';
+
+/*************************************************/
+/* SPACINGS */
+$gutter: 60px;
+$gutter-md: 30px;
+$gutter-sm: 15px;
+
+$input-height: 60px;
+$screen-inner-content: 1000px;
+
+$letter-spacing: 0.4em;
+$letter-spacing-md: 0.2em;
+$letter-spacing-sm: 0.1em;
+$letter-spacing-xs: 0.05em;

@@ -1,0 +1,11 @@
+@use "sass:math";
+@import "bootstrap";
+@import 'variables';
+@import 'mixins';
+@import 'general';
+@import 'form';
+@import 'pixl';
+
+h1 {
+  font-size: rem(100px);
+}
